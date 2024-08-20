@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+   <h1  id="A1Text"   style="text-align: center;font-family: fantasy;background: linear-gradient(green,yellow);">WELCOME TO SHAPE AREA CLACULATOR</h1>
+   <br>
+
+
+
+
+  <div class="ParentContiner" style="background: linear-gradient(to right,orange,blue,green,grey);">
+<h2 id="A2Text" style="text-align: center;font-family: cursive; ">Select Any one of the shapes from below</h2>
+<div  style="background-color: rgba(90, 12, 216, 0.277);margin: 3%;" class="ChildContiner">
+<div style="width: 24%;" class="Circle">
+
+   <button style="background-color: rgb(9, 12, 95);" type="button" onclick="visable1()"> <img  style="width: 50%;height:0%;"  src="circle.png"></button>
+</div>
+&nbsp;&nbsp;
+<div style=" width: 24%;" class="Squeare">
+    <button style="background-color: rgb(199, 11, 143);" type="button" onclick="visable2()"> <img  style="width: 55%;height:0%;"  src="squeare.png"></button>
+</div>
+&nbsp;&nbsp;
+<div  style=" width: 24%;" class="Cylinder">
+    <button style="background-color: rgba(226, 241, 18, 0.752);width: 85%;" type="button" onclick="visable3()"> <img  style="width: 46%;"  src="Cylinder.png"></button>
+</div>
+&nbsp;&nbsp;
+<div  style=" width: 24%;" class="SimpleInterest">
+    <button style="background-color: rgba(241, 148, 18, 0.963);" type="button" onclick="visable4()"> <img  style="width: 78%;"  src="SimpleInterest.png"></button>
+</div>
+&nbsp;&nbsp;
+
+
+<div style=" width: 24%;background-color: rgb(215, 59, 2);" class="Alaphabets">
+    <button style="background-color: rgba(89, 241, 18, 0.963);" type="button" onclick="visable5()"> <img  style="width: 45%;"  src="AlaphaBets.png"></button>
+</div>
+
+
+</div>
+
+
+</div>
+<div style="background: linear-gradient(rgb(5, 5, 104),green);;" class="MyForms">
+    <div class="ForCircle">
+
+        <div id="ForCircle" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;
+        ">
+            <h4 style="text-align: center;color: antiquewhite;">Please Enter value of Radius to Continiue</h4>
+     
+        <button type="button" onclick="AreaofCircle()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+        </div>
+
+
+
+
+
+
+
+        <div id="ForSqueare" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;
+        ">
+            <h4 style="text-align: center;color: antiquewhite;">Please Enter A value to Continiue</h4>
+        <form style="text-align: center;">
+            <input id="SqueareField" style="width: 45%;" type="Number"></input>
+            <br>
+            <br>
+        </form>
+        <button type="button" onclick="AreaofSqueare()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+        </div>
+
+
+
+        <div id="ForCylinder" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;height: 45%;
+        ">
+            <h4 style="text-align: center;color: antiquewhite;">Please Enter Area and height to continue</h4>
+        <form style="text-align: center;">
+            <label>Radius</label>
+            <input id="CylinderRadius" style="width: 25%;" type="Number"></input>
+            <br>
+            <label>Radius</label>
+            <input id="CylinderHeight" style="width: 25%;" type="Number"></input>
+
+            <br>
+            <br>
+        </form>
+        <button type="button" onclick="AreaofCylinder()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+        </div>
+
+
+
+
+
+        
+        <div id="SimpleInterest" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;height: 45%;
+        ">
+            <h4 style="text-align: center;color: antiquewhite;">Please Enter Area and height to continue</h4>
+        <form style="text-align: center;">
+            <label>Principle</label>
+            <input id="Principle" style="width: 25%;" type="Number"></input>
+            <br>
+            <label>Rate Of Interest</label>
+            <input id="Rate" style="width: 25%;" type="Number"></input>
+            <br>
+            <label>TimePeriod</label>
+            <input id="Time" style="width: 25%;" type="Number"></input>
+            <br>
+            <br>
+        </form>
+        <button type="button" onclick="SimpleInterest()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+        </div>
+       
+
+
+
+
+        <div id="Alapha" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;height: 45%;
+        ">
+            <h4 style="text-align: center;color: antiquewhite;">Please Enter Area and height to continue</h4>
+        <form style="text-align: center;">
+            <label>Principle</label>
+            <input id="Principle" style="width: 25%;" type="Number"></input>
+            <br>
+            <label>Rate Of Interest</label>
+            <input id="Rate" style="width: 25%;" type="Number"></input>
+            <br>
+            <label>TimePeriod</label>
+            <input id="Time" style="width: 25%;" type="Number"></input>
+            <br>
+            <br>
+        </form>
+        <button type="button" onclick="SimpleInterest()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+        </div>
+
+
+
+
+
+
+
+        <div id="alapha1">
+
+            <div id="ForCircle" style="background-color: cadetblue;width: 100%;position: absolute;  display: none  ;
+            ">
+                <h4 style="text-align: center;color: antiquewhite;">Please Enter Text to Continiue</h4>
+                <form style="text-align: center;">
+                    <label>Text</label>
+                    <input id="alpha" style="width: 25%;" type="text"></input>
+                  
+                    <br>
+                </form>
+                <button type="button" onclick="Alpha()" style="background-color: purple;color: antiquewhite;margin-left: 50%;width: 40px;">OK</button>
+         
+     
+            </div>
+
+
+</div>
+
+    </div>
+
+    <div style="width: 100%;height: 200px;mask-repeat: no-repeat;" class="Maths">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

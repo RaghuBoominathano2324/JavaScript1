@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#A1Text {
+    animation: blink 1s step-start infinite;
+   
+}
+
+
+#A2Text {
+    animation: blink2 13s step-start infinite;
+   
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: rgb(58, 141, 58); }
+    75% { color: purple; }
+    100% { color: red; }
+
+
+
+}
+
+@keyframes blink2 {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+    0% { color: red; }
+    25% { color: rgba(11, 11, 97, 0.739); }
+    50% { color: rgb(218, 168, 29); }
+    75% { color: purple; }
+    100% { color:limegreen }
+
+
+}
+
+.ChildContiner{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.Maths{
+    background-image: url(Maths.png);
+}
